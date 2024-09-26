@@ -1,14 +1,18 @@
-### Hello there 👋, I'm @rajchaudar
+  
+- 📫 Reach me at: chaudarsp@gmail.com
 
-- 👀 I’m passionate about exploring new technologies and acquiring new skills in the tech industry.
-- 🌱 I’m currently in my 3rd year of Computer Engineering, where I'm delving into software development, data structures, and algorithms.
-- 💞️ I’m looking to collaborate on innovative tech projects, open-source contributions, and research in emerging technologies. I'm always open to suggestions and exciting ideas!
-- 📫 How to reach me: You can email me at [Gmail](mailto:chaudarsp@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/shivrajchaudar).
-- 😄 Pronouns: N/A
-- ⚡ Fun fact: I have a knack for picking up new programming languages. When I'm not coding, you can find me exploring the latest tech trends and gadgets.
+## 🌐 Socials:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/shivrajchaudar]) 
 
-Let's connect and create something amazing together!
-<!---
-rajchaudar/rajchaudar is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# 💻 Tech Stack:
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=java&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
+
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=shivrajchaudar&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=shivrajchaudar&theme=nightowl&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=shivrajchaudar&theme=nightowl&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
