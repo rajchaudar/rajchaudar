@@ -22,7 +22,7 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=rajchaudar&icon=10&color=5)](https://visitcount.itsvg.in)
 
-![Snake Animation](https://raw.githubusercontent.com/rajchaudar/rajchaudar/output/dist/snake.svg)
+![Snake Animation](https://github.com/rajchaudar/rajchaudar/blob/main/dist/snake.svg)
 
 
 
