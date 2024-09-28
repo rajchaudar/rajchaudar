@@ -32,14 +32,11 @@ jobs:
 
       # Commit and push the changes to the repository
       - name: Commit and Push Generated Snake
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the personal access token for authentication
         run: |
-         - name: Commit and Push Generated Snake
-  env:
-    GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}  # Use the personal access token for authentication
-  run: |
-    git config --global user.name 'rajchaudar'
-    git config --global user.email 'rajchaudar60@gmail.com'
-    git add -A
-    git commit -m "Generated Snake Animation" || echo "No changes to commit"
-    git push https://$GITHUB_TOKEN@github.com/rajchaudar/rajchaudar.git
-
+          git config --global user.name 'rajchaudar'
+          git config --global user.email 'rajchaudar60@gmail.com'
+          git add -A
+          git commit -m "Generated Snake Animation" || echo "No changes to commit"
+          git push https://$GITHUB_TOKEN@github.com/rajchaudar/rajchaudar.git
