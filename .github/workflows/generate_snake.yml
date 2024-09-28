@@ -22,12 +22,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      # Step to generate snake.svg with a custom palette
+      # Step to generate snake.svg with red snake and black background
       - name: Generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/snake.svg?palette=FF5733,33FF57,3357FF
+          svg_out_path: dist/snake.svg?palette=FF0000,000000
 
       # Step to handle pulling and pushing to the main branch
       - name: Pull latest changes and Push snake.svg to the main branch
