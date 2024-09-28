@@ -1,0 +1,40 @@
+name: Generate Snake Game
+
+on:
+  # Automatically run the workflow every day at midnight
+  schedule:
+    - cron: "0 0 * * *"
+
+  # Allows manual triggering of the workflow from the Actions tab
+  workflow_dispatch:
+
+  # Automatically run the workflow whenever there's a push to the main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Generate Snake Animation
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository content
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      # Run the snake generator
+      - name: Generate Snake
+        uses: Platane/snk@master
+        with:
+          github_user_name: ${{ github.repository_owner }} # This will correctly use your GitHub username
+          outputs: dist/snake.svg
+
+      # Commit and push the changes to the repository
+      - name: Commit and Push Generated Snake
+        run: |
+          git config --global user.name 'rajchaudar'
+          git config --global user.email 'rajchaudar60@gmail.com'
+          git add -A
+          git commit -m "Generated Snake Animation"
+          git push
