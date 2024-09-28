@@ -27,7 +27,9 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/snake.svg?palette=FF0000,000000
+          color_snake: "#FF0000"  # Snake color: red
+          color_dots: "#000000"  # Dots color: black
+          color_bg: "#000000"  # Background color: black
 
       # Step to handle pulling and pushing to the main branch
       - name: Pull latest changes and Push snake.svg to the main branch
