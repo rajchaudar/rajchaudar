@@ -22,14 +22,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      # Step to generate snake.svg with red snake and black background
+      # Step to generate snake.svg
       - name: Generate snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          color_snake: "#FF0000"  # Snake color: red
-          color_dots: "#000000"  # Dots color: black
-          color_bg: "#000000"  # Background color: black
+          outputs: dist/snake.svg?palette=github-dark
 
       # Step to handle pulling and pushing to the main branch
       - name: Pull latest changes and Push snake.svg to the main branch
