@@ -8,7 +8,7 @@ on:
 
   push:
     branches:
-      - master
+      - main
 
 jobs:
   generate:
@@ -29,15 +29,15 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg?palette=github-dark
 
-      # Step to handle pulling and pushing to the output branch
-      - name: Pull latest changes and Push snake.svg to the output branch
+      # Step to handle pulling and pushing to the main branch
+      - name: Pull latest changes and Push snake.svg to the main branch
         run: |
           git config --global user.name 'rajchaudar'
           git config --global user.email 'rajchaudar60@gmail.com'
-          git checkout output || git checkout -b output
-          git pull origin output || echo "No remote changes to pull"
+          git checkout main
+          git pull origin main || echo "No remote changes to pull"
           git add dist/snake.svg
           git commit -m "Generated Snake Animation" || echo "No changes to commit"
-          git push origin output
+          git push origin main || echo "Push failed, possibly due to conflicts"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
